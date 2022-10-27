@@ -1,0 +1,96 @@
+console.log ("JavaScript String Exercise");
+console.log ("Kilis, Vannesa");
+
+console.log("1.concat");
+//menggabungkan 2 atau lebih string
+//operator + bisa diganti dengan concat karna hasilnya sama
+//akan mengembalikan string baru, dan tidak mengubah string yang sudah ada
+
+let text1 = "Hy" + " " + "Gaes :)"; //contoh menggunakan operator +
+console.log(text1);
+
+let text2 = "Hy";
+let text3 = "Gaes :)";
+let text4 = text2.concat(" ", text3);
+console.log(text4);
+
+let text5 = "Hy".concat(" ","Gaes :)"); //"Hy" is string, "Gaes :)" is string to be combined with
+console.log(text5);
+
+
+console.log("2.includes");
+//akan mengembalikan true jika sebuah string mempunyai string tertentu, jika tidak maka false
+let text6 = "Hello happy people, nice to meet you!";
+let result1 = text6.includes("nice", 0); // "nice" is search value, 0 is starting point
+console.log(result1);
+
+
+console.log("3.length");
+//akan mengembalikan panjang sebuah string (dalam bentuk angka)
+let length = text6.length; 
+console.log(length);
+
+
+console.log("4.split");
+//memisahkan string menjadi array of substring, dan mengembalikan array baru
+//tidak mengubah string original 
+//" " digunakan sebagai pemisah
+
+const myArray = text6.split(" "); 
+let word = myArray[1]; //is a limit parameter
+console.log(myArray);
+
+
+console.log("5.slice");
+//mengekstrak bagian dari string dan mengembalikannya menjadi string baru
+
+let result2 = text6.slice(0, 3); //memotong atau mengestrak 3 string pertama
+//start dan end parameter akan mengkhususkan bagian dari string yang akan di ekstrak
+console.log(result2);
+
+
+console.log("6.substring");
+//mengekstrak karakter antara dua posisi, dari string dan mengembalikan substring
+//mengekstrak karakter dari start sampai end secara eksklusif
+//yang kurang dari 0 akan dianggap sebagai 0
+
+let result3 = text6.substring(1, 4); //start 1, end 4
+console.log(result3);
+let result4 = text6.substring(4, 1); //hasil akan terbalik karna start lebih besar dari end
+console.log(result4);
+let result5 = text6.substring(-3); //start kurang dari 0 akan dianggap sebagai 0
+console.log(result5);
+
+
+console.log("7.toLowercase");
+//mengubah string menjadi huruf kecil semua
+let result6 = text6.toLowerCase();
+console.log(result6);
+
+console.log("8.toUppercase");
+//mengubah string menjadi huruf besar semua
+let result7 = text6.toUpperCase();
+console.log(result7);
+
+
+console.log("9.trim");
+//menghilangkan spasi dari kedua bagian string
+//bisa juga menghilangkan spasi dengan replace() menggunakan regular expression
+
+let text7 = "       Hy Gaes! Hehe:)        ";
+let result8 = text7.trim();
+console.log(result8);
+
+let result9 = text7.replace(/^\s+|\s+$/gm,'');//contoh menggunakan replace()
+console.log(result9);
+
+
+console.log("10.valueOf");
+//mengembalikan nilai primitif dari sebuah string
+//bisa digunakan untuk mengubah objek string menjadi string
+
+let result10 = text6.valueOf();
+console.log(result10);
+let result11 = text6; 
+console.log(result11);
+//keduanya memiliki hasil sama

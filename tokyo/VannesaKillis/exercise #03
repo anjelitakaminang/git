@@ -1,0 +1,53 @@
+/* Kilis, Vannesa Zevania 050922
+FRONT END WEB DEVELOPMENT- C
+EXERCISE #3 */
+
+let person = [
+    {
+        name:"John",
+        age: 35
+    },
+    {
+        name:"Bill",
+        age:23
+    },
+    {
+        name:"Bob",
+        age: 17
+    },
+    {
+        name:"Jack",
+        age: 20
+    },
+];
+
+let oldest = [
+    {
+        name: "human",
+        age: 31
+    },
+];
+
+let youngest = [
+    {
+        name: "manusia",
+        age: 30
+    },
+];
+
+for(let i=0; i<person.length; i++){
+    if(person[i].age > oldest[0].age){
+        oldest[0] = person[i];
+    }
+    
+}
+console.log("Tertua adalah",oldest[0].name);
+
+for(let i=0; i<person.length; i++){
+    if(person[i].age < youngest[0].age){
+        youngest[0] = person[i];
+    }
+    
+}
+console.log("Termuda adalah",youngest[0].name);
+
