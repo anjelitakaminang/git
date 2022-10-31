@@ -1,3 +1,4 @@
+console.log("Test conflict")
 console.log("GROUP EXERCISE 6 BY TOKYO");
 /*
 -Kilis, Vannesa
