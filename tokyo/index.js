@@ -1,4 +1,5 @@
 console.log("Test Fix Conflict");
+console.log("Test conflict lagi");
 console.log("Group Exercises #2 (Tokyo)");
 /* Anggota : 
 -   Kilis, Vannesa Zevania
