@@ -1,3 +1,4 @@
+console.log("Update file langsung dari github");
 console.log("Group Exercises #2 (Tokyo)");
 /* Anggota : 
 -   Kilis, Vannesa Zevania
